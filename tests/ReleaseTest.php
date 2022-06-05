@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Config;
 use Limenet\LaravelSentryHelpers\Facades\LaravelSentryHelpers;
 
-afterEach(function () {
+beforeEach(function () {
     foreach (['composer.json','composer.json'] as $file) {
         $path = base_path($file);
         if (file_exists($path)) {
