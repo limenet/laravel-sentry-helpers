@@ -22,7 +22,7 @@ class LaravelSentryHelpersServiceProvider extends PackageServiceProvider
             ->hasConfigFile();
     }
 
-    public function packageBooted()
+    public function packageBooted(): void
     {
         $this->app->singleton('laravel-sentry-helpers', LaravelSentryHelpers::class);
 
