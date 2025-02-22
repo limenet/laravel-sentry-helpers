@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Config;
 use Limenet\LaravelSentryHelpers\Facades\LaravelSentryHelpers;
 
 beforeEach(function () {
-    foreach (['composer.json','composer.json'] as $file) {
+    foreach (['composer.json', 'composer.json'] as $file) {
         $path = base_path($file);
         if (file_exists($path)) {
             unlink($path);
@@ -17,11 +17,11 @@ it('does not crash when no package file is present', function () {
 });
 
 it('fails gracefully when version is missing in package file', function () {
-    composerJson(version:null)->expect(LaravelSentryHelpers::getVersion())->toBeNull();
+    composerJson(version: null)->expect(LaravelSentryHelpers::getVersion())->toBeNull();
 });
 
 it('fails gracefully when name is missing in package file', function () {
-    composerJson(name:null)->expect(LaravelSentryHelpers::getName())->toBeNull();
+    composerJson(name: null)->expect(LaravelSentryHelpers::getName())->toBeNull();
 });
 
 it('fails gracefully when reading corrupt package file', function () {
@@ -48,9 +48,9 @@ it('can read data from package.json', function () {
 });
 
 it('sanitizes the package name', function () {
-    foreach (["\n","\t",'/','\\'] as $char) {
-        composerJson(name:sprintf('foo%1$sbar%1$sbaz', $char))->expect(LaravelSentryHelpers::getName())->not()->toContain($char);
-        composerJson(name:sprintf('foo%1$sbar%1$sbaz', $char))->expect(LaravelSentryHelpers::getName())->toContain('_');
+    foreach (["\n", "\t", '/', '\\'] as $char) {
+        composerJson(name: sprintf('foo%1$sbar%1$sbaz', $char))->expect(LaravelSentryHelpers::getName())->not()->toContain($char);
+        composerJson(name: sprintf('foo%1$sbar%1$sbaz', $char))->expect(LaravelSentryHelpers::getName())->toContain('_');
     }
 });
 

@@ -18,12 +18,12 @@ class LaravelSentryHelpers
         }
 
         try {
-            $version = (new VersionParser())->normalize($version);
+            $version = (new VersionParser)->normalize($version);
         } catch (UnexpectedValueException $e) {
             return null;
         }
 
-        return$version;
+        return $version;
     }
 
     public function getName(): ?string
@@ -38,7 +38,7 @@ class LaravelSentryHelpers
             $name = explode('/', $name, 2)[1];
         }
 
-        return str_replace(["\n","\t",'/','\\'], '_', $name);
+        return str_replace(["\n", "\t", '/', '\\'], '_', $name);
     }
 
     public function getRelease(): ?string
@@ -64,7 +64,6 @@ class LaravelSentryHelpers
         } catch (JsonException $e) {
             $contents = [];
         }
-
 
         return $contents;
     }
