@@ -1,7 +1,7 @@
 
 # Helpers for Laravel and Sentry
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/limenet/laravel-pdf.svg?style=flat-square)](https://packagist.org/packages/limenet/laravel-sentry-helpers)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/limenet/laravel-sentry-helpers.svg?style=flat-square)](https://packagist.org/packages/limenet/laravel-sentry-helpers)
 [![GitHub Tests Action Status](https://github.com/limenet/laravel-sentry-helpers/actions/workflows/run-tests.yml/badge.svg)](https://github.com/limenet/laravel-sentry-helpers/actions/workflows/run-tests.yml)
 [![Fix PHP code style issues](https://github.com/limenet/laravel-sentry-helpers/actions/workflows/fix-php-code-style-issues.yml/badge.svg)](https://github.com/limenet/laravel-sentry-helpers/actions/workflows/fix-php-code-style-issues.yml)
 [![PHPStan](https://github.com/limenet/laravel-sentry-helpers/actions/workflows/phpstan.yml/badge.svg)](https://github.com/limenet/laravel-sentry-helpers/actions/workflows/phpstan.yml)
