@@ -1,16 +1,19 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Call to an undefined static method Limenet\\\\LaravelSentryHelpers\\\\Facades\\\\LaravelSentryHelpers\\:\\:getCacheKey\\(\\)\\.$#"
+			message: '#^Call to an undefined static method Limenet\\LaravelSentryHelpers\\Facades\\LaravelSentryHelpers\:\:getCacheKey\(\)\.$#'
+			identifier: staticMethod.notFound
 			count: 1
 			path: src/LaravelSentryHelpersServiceProvider.php
 
 		-
-			message: "#^Call to an undefined static method Limenet\\\\LaravelSentryHelpers\\\\Facades\\\\LaravelSentryHelpers\\:\\:getCacheTtlInSeconds\\(\\)\\.$#"
+			message: '#^Call to an undefined static method Limenet\\LaravelSentryHelpers\\Facades\\LaravelSentryHelpers\:\:getCacheTtlInSeconds\(\)\.$#'
+			identifier: staticMethod.notFound
 			count: 1
 			path: src/LaravelSentryHelpersServiceProvider.php
 
 		-
-			message: "#^Call to an undefined static method Limenet\\\\LaravelSentryHelpers\\\\Facades\\\\LaravelSentryHelpers\\:\\:getRelease\\(\\)\\.$#"
+			message: '#^Call to an undefined static method Limenet\\LaravelSentryHelpers\\Facades\\LaravelSentryHelpers\:\:getRelease\(\)\.$#'
+			identifier: staticMethod.notFound
 			count: 1
 			path: src/LaravelSentryHelpersServiceProvider.php
