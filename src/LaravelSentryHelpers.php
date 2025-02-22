@@ -53,11 +53,12 @@ class LaravelSentryHelpers
         return sprintf('%s@%s', $name, $version);
     }
 
+    /** @return array<mixed> */
     private function getPackageContents(): array
     {
         try {
             $contents = rescue(
-                fn (): array => json_decode(file_get_contents($this->getPackageFilePath()), true, 10, JSON_THROW_ON_ERROR),
+                fn (): array => json_decode(file_get_contents($this->getPackageFilePath()) ?: '', true, 10, JSON_THROW_ON_ERROR),
                 []
             );
         } catch (JsonException $e) {
