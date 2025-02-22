@@ -19,7 +19,7 @@ class LaravelSentryHelpers
 
         try {
             $version = (new VersionParser)->normalize($version);
-        } catch (UnexpectedValueException $e) {
+        } catch (UnexpectedValueException) {
             return null;
         }
 
@@ -61,7 +61,7 @@ class LaravelSentryHelpers
                 fn (): array => json_decode(file_get_contents($this->getPackageFilePath()) ?: '', true, 10, JSON_THROW_ON_ERROR),
                 []
             );
-        } catch (JsonException $e) {
+        } catch (JsonException) {
             $contents = [];
         }
 
