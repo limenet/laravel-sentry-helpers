@@ -53,7 +53,9 @@ class LaravelSentryHelpers
         return sprintf('%s@%s', $name, $version);
     }
 
-    /** @return array<mixed> */
+    /**
+     * @return array<mixed, mixed>
+     */
     private function getPackageContents(): array
     {
         try {
