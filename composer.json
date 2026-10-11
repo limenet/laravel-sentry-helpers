@@ -22,18 +22,18 @@
         "spatie/laravel-package-tools": "^1.9.2"
     },
     "require-dev": {
-        "larastan/larastan": "^3.9.3",
-        "laravel/pint": "^1.29",
-        "nunomaduro/collision": "^7.10 || ^8.9.1",
-        "orchestra/testbench": "^10.11 || ^11.0",
-        "pestphp/pest": "^4.4.3",
-        "pestphp/pest-plugin-arch": "^4.0",
+        "larastan/larastan": "^3.13.0",
+        "laravel/pint": "^1.32.1",
+        "nunomaduro/collision": "^7.10 || ^8.9.5",
+        "orchestra/testbench": "^10.11 || ^11.3",
+        "pestphp/pest": "^4.7.8",
+        "pestphp/pest-plugin-arch": "^4.0.2",
         "pestphp/pest-plugin-laravel": "^4.1",
         "phpstan/extension-installer": "^1.4.3",
-        "phpstan/phpstan-deprecation-rules": "^2.0.4",
-        "phpstan/phpstan-phpunit": "^2.0.16",
-        "phpunit/phpunit": "^12.5.14 || ^13.0",
-        "rector/rector": "^2.3.9"
+        "phpstan/phpstan-deprecation-rules": "^2.0.5",
+        "phpstan/phpstan-phpunit": "^2.1.1",
+        "phpunit/phpunit": "^12.5.33 || ^13.0",
+        "rector/rector": "^2.7.0"
     },
     "autoload": {
         "psr-4": {
